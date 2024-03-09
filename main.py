@@ -37,17 +37,17 @@ def main():
     # config models
     model1.compile(optimizer="adam", loss="MeanSquaredError")
     model1.fit(x=x_train, y=y_train, epochs=2)
-    print(model3.predict(np.array(test)), "\nkdsakdka")
+    print(model3.predict(np.array(test)))
     result1 = model1.evaluate(x=x_test, y=y_test)
 
     model2.compile(optimizer="adam", loss="mean_absolute_error")
     model2.fit(x=x_train, y=y_train, epochs=2)
-    print(model2.predict(np.array(test)), "\nkdsakdka")
+    print(model2.predict(np.array(test)))
     result2 = model2.evaluate(x=x_test, y=y_test)
 
     model3.compile(optimizer="adam", loss="mean_absolute_percentage_error")
     model3.fit(x=x_train, y=y_train, epochs=2)
-    print(model3.predict(np.array(test)), "\nkdsakdka")
+    print(model3.predict(np.array(test)))
     result3 = model3.evaluate(x=x_test, y=y_test)
     
     # print([result1, result2, result3])
